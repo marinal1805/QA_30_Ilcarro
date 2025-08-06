@@ -18,9 +18,20 @@ public boolean isLogged(){
         return isElementPresent(By.xpath("//a[text()='Delete account']"));
 }
 
-
-    public void fillRegistrationForm(String email, String password) {
+    public void fillLoginForm(String email, String password) {
         type(By.id("email"), email);
         type(By.id("password"), password);
+    }
+
+    public void clickYallaBtnOnLoginPage(){
+        click(By.xpath("//button[@type='submit']"));
+    }
+
+    public void clickLoggedInOk(){
+        click(By.xpath("//button[@type='button']"));
+    }
+
+    public void logout(){
+        click(By.xpath("//a[text()=' Logout ']"));
     }
 }
