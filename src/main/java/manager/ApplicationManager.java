@@ -32,6 +32,6 @@ public class ApplicationManager {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-
     }
+
 }
